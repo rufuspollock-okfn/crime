@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700);
+
+html {
+  overflow-x: hidden;
+	background-color: #edeeec;
+}
+body {
+  padding-top: 70px;
+	font-family:'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+	background-image: url(stripes.png);
+	background-repeat: repeat;
+	background-position: center top;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	border-bottom-color:#2b2a2a;
+}
+.navbar .navbar-inner {
+	background-image: url(header-map.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color:transparent;
+	height:70px;
+	line-height:70px;
+	-webkit-box-shadow: 0px 0px 0px 0px ;
+  box-shadow: 0px 0px 0px 0px ;
+	border:none;
+	filter:none;
+}
+.navbar .navbar-inner .brand {
+	padding: 0px 20px 0px 26px;
+	background-image: url(logo-icon.png);
+	background-repeat: no-repeat;
+	background-position: left 18px;
+	margin:0px;
+	color:#2b2a2a;
+	text-shadow:none;
+}
+.navbar .nav > li > a {
+  color: #2b2a2a;
+  padding: 25px 15px;
+	text-shadow:none;
+	border-left: solid 1px #a7a9a4;
+}
+
+.page-header {
+	margin-bottom:10px;
+}
+
+footer {
+  background-color: #edeeec;
+  padding: 20px 20px 20px;
+  margin: 15px -20px -20px;
+  border-top: solid 10px #caccc7;
+	font-size:12px;
+}
+footer a,
+footer a:hover {
+	color: #333333;
+	border-bottom: dotted 1px #333333;
+	text-decoration:none;
+}
+footer a:hover {
+	border-bottom:solid 1px #333333;
+}
+
+.nav-logo img {
+  margin-top: -4px;
+  margin-right: -4px;
+}
+
