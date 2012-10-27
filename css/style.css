@@ -71,3 +71,6 @@ footer a:hover {
   margin-right: -4px;
 }
 
+.recline-map .map {
+  height: 600px;
+}
