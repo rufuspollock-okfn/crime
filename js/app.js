@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  var url = 'http://resources.opendatalabs.org/datasets/crime-uk/cache/streets.csv';
+  var url = 'http://resources.opendatalabs.org/datasets/crime-uk/cache/csv/2012-08-city-of-london-street.zip.csv';
   // var url = 'http://localhost/dps/crime-uk/cache/streets.csv';
   var dataset = new recline.Model.Dataset({
     url: url,
