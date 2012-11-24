@@ -5,7 +5,7 @@ html {
 	background-color: #edeeec;
 }
 body {
-  padding-top: 70px;
+  padding-top: 55px;
 	font-family:'PT Sans', Helvetica, Arial, sans-serif;
 }
 
@@ -22,25 +22,25 @@ body {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-color:transparent;
-	height:70px;
-	line-height:70px;
+	height:50px;
+	line-height:50px;
 	-webkit-box-shadow: 0px 0px 0px 0px ;
   box-shadow: 0px 0px 0px 0px ;
 	border:none;
 	filter:none;
 }
 .navbar .navbar-inner .brand {
-	padding: 0px 20px 0px 26px;
+	padding: 0px 10px 0px 26px;
 	background-image: url(logo-icon.png);
 	background-repeat: no-repeat;
-	background-position: left 18px;
+	background-position: left 9px;
 	margin:0px;
 	color:#2b2a2a;
 	text-shadow:none;
 }
 .navbar .nav > li > a {
   color: #2b2a2a;
-  padding: 25px 15px;
+  padding: 15px 15px;
 	text-shadow:none;
 	border-left: solid 1px #a7a9a4;
 }
@@ -76,11 +76,11 @@ footer a:hover {
   *********************************************************/
 
 .navbar .forces select {
-  margin: 20px 15px; 
+  margin: 10px 15px; 
 }
 
 .navbar .forces .chzn-container {
-  padding: 24px 15px;
+  padding: 11px 15px;
 }
 
 /**********************************************************
