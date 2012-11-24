@@ -75,8 +75,12 @@ footer a:hover {
   * Navbar tweaks
   *********************************************************/
 
-.navbar select {
+.navbar .forces select {
   margin: 20px 15px; 
+}
+
+.navbar .forces .chzn-container {
+  padding: 24px 15px;
 }
 
 /**********************************************************
