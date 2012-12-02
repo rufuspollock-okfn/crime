@@ -1,23 +1,43 @@
+var base = 'http://resources.opendatalabs.org/datasets/crime-uk/cache/csv/';
+var base = 'http://localhost/datasets/crime-uk/cache/csv/';
+
 jQuery(document).ready(function($) {
-  var url = 'http://resources.opendatalabs.org/datasets/crime-uk/cache/csv/2012-08-city-of-london-street.zip.csv';
-  var url = 'http://localhost/dps/crime-uk/cache/streets.csv';
+  window.map = null;
+
+  var month = '2012-08';
+
+  $('.forces select').change(function(e) {
+    var force = $(e.target).find('option:selected').val();
+    showMap(force, month);
+  });
+  $('.forces select').chosen();
+
+  // finally trigger the select with our default value
+  $('.forces select').val('city-of-london').trigger('liszt:updated');
+  $('.forces select').change();
+});
+
+function showMap(force, month) {
+  var url = base + month + '-' + force + '-street.zip.csv';
   var dataset = new recline.Model.Dataset({
     url: url,
     backend: 'csv'
   });
   var $el = $('.crime-map');
   dataset.fetch().done(function() {
-    var map = new recline.View.Map({
+    if (window.map) {
+      window.map.remove();
+    }
+    window.map = new recline.View.Map({
       model: dataset,
-      el: $el,
       state: {
         latField: 'Latitude',
         lonField: 'Longitude'
       }
     });
-    map.render();
+    $el.append(map.el);
+    window.map.render();
     dataset.query({size: 10000});
   });
+}
 
-  $('.forces select').chosen();
-});
