@@ -1,4 +1,4 @@
-var base = 'http://resources.opendatalabs.org/datasets/crime-uk/cache/csv/';
+var base = 'http://assets.okfnlabs.org/datasets/crime-uk/cache/csv/';
 // var base = 'http://localhost/datasets/crime-uk/cache/csv/';
 
 jQuery(document).ready(function($) {
