@@ -13,4 +13,11 @@ What do you want to see?
 
   * Per capita is important
 
+### Long-term
+
+Work generically with data from different sources (common CSV).
+
+## Awesome Existing Work
+
+http://oakland.crimespotting.org/
 
